@@ -1,0 +1,252 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Section */
+#nav-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+#nav-logo img {
+    width: 35%;
+}
+
+#nav-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 10rem;
+    position: relative;
+}
+
+#contact-Btn{
+    font-size: 1rem;
+    background-color: #84cc16; /* Original color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#contact-Btn:hover{
+    background-color: #65a30d; /* Slightly darker shade */
+}
+
+#nav-contact img{
+    width: 25%;
+}
+
+#linkedInLogo:hover{
+    cursor: pointer;
+}
+
+
+.linkedInError{
+    position: absolute;
+    left: 8.4rem;
+    top: 3rem;
+    background-color: #84cc16;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: none;
+}
+
+/*Navigation Section Responsive*/
+@media (max-width: 960px) {
+    #nav-section{
+        display: flex;
+    }
+    #nav-logo{
+        margin-right: 1rem;
+    }
+    #nav-logo img{
+        width: 25%;
+    }
+    #nav-contact{
+        margin-right: 5rem;
+    }
+    #contact-Btn{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}
+
+
+/* Info Section */
+#info-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-section img{
+    width: 30%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#information h1{
+    font-size: 2rem;
+    text-decoration-line: overline;
+}
+
+#information p{
+        word-wrap: break-word; /* Ensures long words break and wrap onto the next line */
+        white-space: normal;   /* Allows text to wrap normally */
+    
+}
+
+#information2{
+    display: none;
+}
+
+/*Info Section Responsive*/
+@media (max-width: 960px) {
+    #info-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+        margin: 0;
+        margin-top: 1rem;
+        overflow: hidden; /* Prevents scroll bars */
+        padding: 0;
+     }
+
+    #information{
+        display: none;
+        margin: 0;
+    }
+
+    #information2 {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+
+/*Project Section*/
+.project-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.controlBtns{
+    border: 1px solid black;
+    display: flex;
+    background-color: #84cc16; /* Original color */
+    margin-bottom: 1rem;
+}
+
+#frontendButton{
+    background-color: #a5f3fc;
+}
+
+.frontendProjects{
+    display: flex;
+}
+
+
+/* Project Section */
+.project-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.controlBtns {
+    border: 1px solid black;
+    display: flex;
+    background-color: #84cc16; /* Original color */
+}
+
+.frontendProjects {
+    display: flex;
+}
+
+/* Project boxes */
+.canvasConnectProject {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+    margin-bottom: 1rem;
+    position: relative; /* Ensure the position is relative */
+    width: auto; /* Ensure the width is only as wide as its content */
+}
+
+.canvas-projectInfo {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.canvasConnectProject img {
+    width: 30%;
+    border: 2px solid #84cc16; 
+    border-radius: 5px;
+}
+
+
+.canvasConnectProject a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.canvasConnectProject a:hover{
+    color: blue;
+}
+
+
+
+
+/* Project Section Responsive */
+@media (max-width: 960px) {
+    .project-Container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-controls {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .frontendProjects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .canvasConnectProject {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .canvasConnectProject img {
+        width: 85%;
+        max-width: 400px;
+    }
+}
