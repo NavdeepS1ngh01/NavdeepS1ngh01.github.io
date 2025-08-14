@@ -219,6 +219,40 @@ body, html {
 }
 
 
+.fullstackProjects{
+    display: flex;
+}
+
+.memoryNudgerProject{
+     display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+    margin-bottom: 1rem;
+    position: relative; /* Ensure the position is relative */
+    width: auto; /* Ensure the width is only as wide as its content */
+}
+
+.memoryNudgerInfo{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.memoryNudgerProject img {
+    width: 30%;
+    border: 2px solid #84cc16; 
+    border-radius: 5px;
+}
+
+.memoryNudgerProject a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.memoryNudgerProject a:hover{
+    color: blue;
+}
+
 
 
 /* Project Section Responsive */
